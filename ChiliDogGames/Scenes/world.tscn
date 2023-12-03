@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://qy5e7528j7wf"]
+
+[ext_resource type="PackedScene" uid="uid://cvck8fuxyjsmf" path="res://Scenes/player.tscn" id="1_jb73x"]
+[ext_resource type="PackedScene" uid="uid://5uyp3hx0eqel" path="res://Scenes/snowman_spot.tscn" id="2_iulla"]
+[ext_resource type="Script" path="res://SnowMound Spawner.gd" id="3_5d4qp"]
+[ext_resource type="PackedScene" uid="uid://bvsqyg83d3k73" path="res://Scenes/snowball.tscn" id="4_qst2n"]
+
+[node name="World" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_jb73x")]
+position = Vector2(97, 360)
+
+[node name="Snowman_Spot" parent="." instance=ExtResource("2_iulla")]
+position = Vector2(1166, 370)
+
+[node name="SnowMound Spawner" type="Node2D" parent="." groups=["snowmoundspawner"]]
+position = Vector2(200, 340)
+script = ExtResource("3_5d4qp")
+
+[node name="Snowball" parent="." instance=ExtResource("4_qst2n")]
+position = Vector2(200, 340)

@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://5uyp3hx0eqel"]
+
+[ext_resource type="Script" path="res://snowman_spot.gd" id="1_1t4q0"]
+[ext_resource type="Texture2D" uid="uid://b6sis6qvrlx17" path="res://icon.svg" id="1_4qgi7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4rtuu"]
+size = Vector2(80, 120)
+
+[node name="Snowman_Spot" type="Node2D" groups=["snowman"]]
+script = ExtResource("1_1t4q0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.499999, 4.52995e-06)
+scale = Vector2(0.617188, 0.921875)
+texture = ExtResource("1_4qgi7")
+
+[node name="SnowmanAura" type="Area2D" parent="."]
+
+[node name="SnowmanAuraShape" type="CollisionShape2D" parent="SnowmanAura"]
+shape = SubResource("RectangleShape2D_4rtuu")
+
+[node name="Name" type="Label" parent="."]
+offset_left = -102.0
+offset_top = -85.0
+offset_right = 102.0
+offset_bottom = -62.0
+text = "Snowman_Progress_Sprite"
+metadata/_edit_use_anchors_ = true
+
+[node name="Prog" type="Label" parent="."]
+offset_left = -10.0
+offset_top = 63.0
+offset_right = 30.0
+offset_bottom = 86.0
+text = "0%"
