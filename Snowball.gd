@@ -3,7 +3,7 @@ extends Area2D
 @onready var player = get_tree().get_first_node_in_group("player")
 var stop = false
 var snowball_size = 0
-var speed = 1.5
+var speed = 1.7
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	visible = false
@@ -36,7 +36,8 @@ func _on_area_exited(area: Area2D) -> void:
 		
 func increase_size(size,pos):
 	visible = true
-	speed -= .2*size
+	if speed - .2*size > 0:
+		speed -= .2*size
 	position = pos
 	snowball_size += size
 	if snowball_size > 1:
@@ -44,5 +45,5 @@ func increase_size(size,pos):
 
 func reset_to_nothing():
 	visible = false
-	speed = 1.5
+	speed = 1.7
 	snowball_size = 0
