@@ -11,7 +11,7 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	random_upgrade += randi() % 10
 	if random_upgrade > 2000:
-		if upgrade < 2:
+		if upgrade < 1:
 			upgrade += 1
 		random_upgrade = 0
 		get_node("Label").text = "Snow_Mound_Sprite lvl " + str(upgrade)

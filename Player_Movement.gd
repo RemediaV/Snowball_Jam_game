@@ -42,4 +42,4 @@ func _physics_process(_delta: float) -> void:
 
 
 func _on_player_aura_area_entered(area: Area2D) -> void:
-	print(area)
+	pass

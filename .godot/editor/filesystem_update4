@@ -1,2 +1,10 @@
 res://Scenes/world.tscn
 res://Snowball.gd
+res://Scenes/player.tscn
+res://Scenes/snowball.tscn
+res://Scenes/snow_mound.tscn
+res://Scenes/snowman_spot.tscn
+res://snowman_spot.gd
+res://SnowMound Spawner.gd
+res://Player_Movement.gd
+res://snow_mound.gd

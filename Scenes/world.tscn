@@ -8,14 +8,22 @@
 [node name="World" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_jb73x")]
-position = Vector2(97, 360)
+position = Vector2(627, 649)
 
 [node name="Snowman_Spot" parent="." instance=ExtResource("2_iulla")]
-position = Vector2(1166, 370)
+position = Vector2(384, 89)
+
+[node name="Snowman_Spot2" parent="." instance=ExtResource("2_iulla")]
+position = Vector2(834, 90)
+snowman_part_name = "body"
+
+[node name="Snowman_Spot3" parent="." instance=ExtResource("2_iulla")]
+position = Vector2(615, 89)
+snowman_part_name = "torso"
 
 [node name="SnowMound Spawner" type="Node2D" parent="." groups=["snowmoundspawner"]]
-position = Vector2(200, 340)
+position = Vector2(48, 368)
 script = ExtResource("3_5d4qp")
 
 [node name="Snowball" parent="." instance=ExtResource("4_qst2n")]
-position = Vector2(200, 340)
+position = Vector2(598, 678)
