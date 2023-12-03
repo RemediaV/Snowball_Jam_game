@@ -1,0 +1,14 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1701571715
+icon.svg::CompressedTexture2D::4599953170195647352::1701571718::1701571772::1::::<><>::
+Player_Movement.gd::GDScript::-1::1701571718::0::1::::<>CharacterBody2D<>::
+Snowball.gd::GDScript::-1::1701571718::0::1::::<>Area2D<>::
+snowman_spot.gd::GDScript::-1::1701571718::0::1::::<>Node2D<>::
+SnowMound Spawner.gd::GDScript::-1::1701571718::0::1::::<>Node2D<>::
+snow_mound.gd::GDScript::-1::1701571718::0::1::::<>Node2D<>::
+::res://Scenes/::1701571716
+player.tscn::PackedScene::6251602235009828749::1701571718::0::1::::<><>::res://Player_Movement.gd<>uid://b6sis6qvrlx17::::res://icon.svg
+snowball.tscn::PackedScene::3898559897998798676::1701571718::0::1::::<><>::res://Snowball.gd<>uid://b6sis6qvrlx17::::res://icon.svg
+snowman_spot.tscn::PackedScene::2148438341503169571::1701571718::0::1::::<><>::res://snowman_spot.gd<>uid://b6sis6qvrlx17::::res://icon.svg
+snow_mound.tscn::PackedScene::3971497273641636520::1701571718::0::1::::<><>::res://snow_mound.gd<>uid://b6sis6qvrlx17::::res://icon.svg
+world.tscn::PackedScene::1174396945627150377::1701571718::0::1::::<><>::uid://cvck8fuxyjsmf::::res://Scenes/player.tscn<>uid://5uyp3hx0eqel::::res://Scenes/snowman_spot.tscn<>res://SnowMound Spawner.gd<>uid://bvsqyg83d3k73::::res://Scenes/snowball.tscn
