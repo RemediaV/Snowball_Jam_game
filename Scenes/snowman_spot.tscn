@@ -25,6 +25,7 @@ offset_top = -85.0
 offset_right = 102.0
 offset_bottom = -62.0
 text = "Snowman_Progress_Sprite"
+horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Prog" type="Label" parent="."]
