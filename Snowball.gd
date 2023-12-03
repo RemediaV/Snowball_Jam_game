@@ -22,7 +22,7 @@ func _physics_process(delta: float) -> void:
 
 func _on_area_entered(area: Area2D) -> void:
 	
-	if area.name == "PlayerAura" or "Snowball":
+	if area.name == "PlayerAura":
 		stop = true
 	elif area.name == "SnowMoundAura" or "SnowmanAura":
 		stop = false
@@ -33,7 +33,7 @@ func _on_area_entered(area: Area2D) -> void:
 
 
 func _on_area_exited(area: Area2D) -> void:
-	if area.name == "PlayerAura" or "Snowball":
+	if area.name == "PlayerAura":
 		stop = false
 		
 func increase_size(size,pos):
